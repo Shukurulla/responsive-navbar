@@ -1,0 +1,150 @@
+section {
+  background: linear-gradient(
+    111.6deg,
+    #feda0dcb 4.15%,
+    rgba(255, 153, 0, 0.831) 74.61%
+  );
+  height: 70vh; /* View Height */
+}
+.img {
+  width: 97.85px;
+  height: 76.61px;
+  background-color: #000;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo h2 {
+  font-weight: 900 !important;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+.navigation ul li {
+  list-style: none;
+}
+.navigation ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.option .icon {
+  height: 41px;
+  width: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 45pc;
+  color: #fff;
+  font-size: 17px;
+}
+.option select {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+h1 {
+  font-size: 24px; /* View width */
+  font-weight: 900 !important;
+  width: 70%;
+}
+p {
+  font-size: 24px;
+  width: 60%;
+  font-weight: 500;
+  margin-top: 10px !important;
+  margin-bottom: 40px !important;
+}
+.main_link {
+  background: #f63d3d;
+  box-shadow: 0px 9px 50px rgba(246, 61, 61, 0.42);
+  border-radius: 25.3462px;
+  padding: 12px 17px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+}
+.image img {
+  border-radius: 45pc;
+  box-shadow: 0 0 140px #ffffff9b;
+}
+.bi-list {
+  font-size: 25px;
+  color: #000;
+  cursor: pointer;
+  display: none;
+}
+.bi-x-lg {
+  font-size: 25px;
+  display: none;
+  color: #000;
+  cursor: pointer;
+}
+
+@media (max-width: 995px) {
+  .bi-list {
+    display: block;
+  }
+  .navigation {
+    position: absolute;
+    background-color: rgba(9, 9, 9, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    display: none;
+    transition: 0.4s;
+  }
+  .navigation.active {
+    display: flex;
+  }
+  .navigation ul {
+    background-color: #fff;
+    width: 100%;
+    height: 90%;
+    flex-direction: column;
+    align-items: start;
+    padding: 30px;
+    position: relative;
+  }
+  .bi-x-lg {
+    display: block;
+    color: #fff;
+  }
+  .option {
+    position: absolute;
+    left: 7%;
+    bottom: 30%;
+  }
+}
